@@ -1,6 +1,6 @@
 import numpy as np
 
-print(""Please cite:
+print("""Please cite:
 
 Arnaout et al. SARS-CoV-2 Testing: The Limit of Detection Matters—The Case for Benchmarking. bioRxiv, In press.
 """)
