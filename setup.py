@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setuptools.setup(
 	name="ct2vl",
-	version="0.0.2",
+	version="0.0.3",
 	author= "Ramy Arnaout",
 	author_email="rarnaout@bidmc.harvard.edu",
 	description="Convert Ct values to viral loads for the Abbott m2000 SARS-CoV-2 RT-PCR test",
