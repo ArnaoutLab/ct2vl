@@ -11,9 +11,9 @@ vL = 100 # viral load at LoD, in copies/mL
 CtL = 26.06 # Ct value at LoD (result of BIDMC validation)
 
 def ct2vl(Ct):
-#
-log_v = np.log(vL) + (CtL-1+b/m)*np.log(m*(CtL-1)+b) - (Ct-1+b/m)*np.log(m*(Ct-1)+b)  + Ct-CtL
-return np.exp( log_v )
+	#
+	log_v = np.log(vL) + (CtL-1+b/m)*np.log(m*(CtL-1)+b) - (Ct-1+b/m)*np.log(m*(Ct-1)+b)  + Ct-CtL
+	return np.exp( log_v )
 
 assert(np.round(ct2vl(CtL)*100)/100==vL)
 
