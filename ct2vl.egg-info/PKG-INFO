@@ -1,25 +1,16 @@
 Metadata-Version: 2.1
 Name: ct2vl
 Version: 0.0.1
-Summary: ct2vl is a python package for converting Ct values to viral loads using Abbott m2000
+Summary: Convert Ct values to viral loads for the Abbott m2000 SARS-CoV-2 RT-PCR test
 Home-page: https://github.org/rarnaout/ct2vl
 Author: Ramy Arnaout
 Author-email: rarnaout@bidmc.harvard.edu
 License: UNKNOWN
-Description: Ct2vl. py is for use with Abbott m2000 as validated at Beth Israel Deaconess Medical Center. If you want to use this at some other site or system, you will want to be sure that efficiency falls linearly with Ct, and measure the appropriate constants.
+Description: ct2vl.py is for use with the Abbott SARS-CoV-2 RT-PCR (Covid-19) test on the Abbott m2000 system as validated at Beth Israel Deaconess Medical Center. If you want to use this at some other site or on/for some other system, you will want to be sure that efficiency falls linearly with Ct, and measure the appropriate constants. (If you want to customize further, please see the derivation of the math in the citation below.)
         
-        Please cite:
+        If you use this conversion, please cite:
         
         Arnaout et al. SARS-CoV-2 Testing: The Limit of Detection Matters—The Case for Benchmarking. bioRxiv, In press.
-        
-        
-        
-        Below are the constants:
-        
-        m = -0.0283 # slope of line relating efficiency to cycle no (R2=0.82)
-        b = m*1.41 + (1.379 + 1) # = rho_0 = efficiency + 1
-        vL = 100 # viral load at LoD, in copies/mL
-        CtL = 26.06 # Ct value at LoD (result of BIDMC validation)
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
