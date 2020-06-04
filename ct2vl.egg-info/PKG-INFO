@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ct2vl
-Version: 0.0.1
+Version: 0.0.2
 Summary: Convert Ct values to viral loads for the Abbott m2000 SARS-CoV-2 RT-PCR test
 Home-page: https://github.org/rarnaout/ct2vl
 Author: Ramy Arnaout
